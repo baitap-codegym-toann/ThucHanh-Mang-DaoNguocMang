@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reverser</title>
+</head>
+<body>
+<script>
+    let x = ["a","b","c","e"];
+    x.reverse();
+    document.write("Input "+x+" ");
+    let i = 0;
+    let j = x.length;
+    while (i<j){
+        let bak = x[i];
+        x[i] = x[j];
+        x[j] = bak;
+        i++;j--;
+    }
+    document.write("Reversed: "+x);
+</script>
+</body>
+</html>
